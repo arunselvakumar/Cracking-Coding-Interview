@@ -19,7 +19,7 @@ function hasUniqueCharacters(input) {
     return !hasDuplicates;
 }
 
-describe('hasUniqueCharacters', function() {
+describe('hasUniqueCharacters()', function() {
     it('should return `TRUE` when the input character is Unique', function () {
         expect(hasUniqueCharacters('ABCDEFGH')).toBe(true);
     });
