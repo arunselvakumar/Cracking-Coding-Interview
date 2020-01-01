@@ -3,7 +3,7 @@
  */
 
 function urlify(input) {
-    const characters = input.split('');
+    const characters = input.trim().split('');
     const resultUrl = [];
     for (let i = 0; i < characters.length; i++) {
         if (characters[i] === ' ') {
@@ -16,4 +16,10 @@ function urlify(input) {
     return resultUrl.join('');
 }
 
+console.log(urlify(''));
+console.log(urlify(' '));
+console.log(urlify('   '));
+console.log(urlify('arun'));
+console.log(urlify('arun selva'));
 console.log(urlify('arun selva kumar'));
+
